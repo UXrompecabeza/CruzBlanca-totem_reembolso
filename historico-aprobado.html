@@ -1,0 +1,142 @@
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <link rel="icon" type="image/x-icon" href="./assets/icons/favicon/favicon-bupa.png"/>
+    <link rel="stylesheet" href="css/styles.css"/>
+    <link rel="stylesheet" href="css/libs/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/libs/progress-tracker.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet"/>
+    <title>Cruz Blanca</title>
+  </head>
+  <body>
+    <section class="historico-index">
+      <div class="main-container">
+        <h1 class="section-title section-title_desk"> Reembolso en línea</h1>
+        <div class="narrow-container lineless">
+          <div class="list-item">
+            <div class="list-info-box">
+              <h2>Solicitud aprobada</h2><span class="bajada">Nº solicitud: 333942489</span>
+            </div>
+            <div class="body-box border-top-list">
+              <div class="item">
+                <div class="row">
+                  <div class="item-icon col-md-1 no-padding right"><img src="assets/icons/icon-pagada-mobile.svg"/></div>
+                  <div class="item-info col-md-8">
+                    <h3 class="item-info_title no-margin item_check">Solicitud aprobada</h3>
+                    <p class="item-info_servicio item_light">Consulta médica y exámenes</p>
+                    <p class="item-info_asunto item-normal_strong">Reembolso Nicolas</p>
+                    <p class="item-info_user item_light">Nicolás Rojas Celedón - Beneficiario</p>
+                    <div class="item-prices">
+                      <div class="item-princes-col">
+                        <p class="item-normal">Solicitado</p>
+                        <p class="value">$25.000</p>
+                      </div>
+                      <div class="item-princes-col border-col">
+                        <p class="item-normal">Reembolsado</p>
+                        <p class="value">$25.000</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item-details col-md-2">
+                    <div class="item-details-date right">
+                      <p class="item_light">15 Jun</p>
+                    </div>
+                  </div>
+                  <div class="item-details col-md-1">
+                    <div class="item-details-img"><a href="#"><img src="assets/icons/icon-arrow-right.svg" alt=""/></a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flujo-progreso"> 
+              <div class="demo"></div>
+              <div class="modales modal fade" id="reembolsoModal" tabindex="-1" role="dialog" aria-labelledby="reembolsoModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="reembolsoModalLabel">Solicitud reembolso</h5>
+                      <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="modal-title_serie">
+                        <p>Nº solicitud: 34739743</p>
+                      </div>
+                      <div class="modal-info_reembolso">
+                        <div class="box-informe">
+                          <div class="row">
+                            <div class="col-4">
+                              <div class="box-label">
+                                <p class="label-grey">Beneficiario</p>
+                                <p class="inf-txt">Eduardo Rojas Calderón Titular</p>
+                              </div>
+                              <div class="box-label">
+                                <p class="label-grey">Monto solicitado a reembolsar</p>
+                                <p class="inf-txt_strong">$ 22.450</p>
+                                <div class="box-messenge"><img src="assets/icons/icon-alert.svg" alt=""/>
+                                  <p>Tu tope de reembolso por consulta es de $26.633 (1UF)</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-4">
+                              <div class="box-label"> 
+                                <p class="label-grey">Nombre corto del reembolso</p>
+                                <p class="inf-txt">Resfrío Martín</p>
+                              </div>
+                              <div class="box-label">
+                                <p class="label-grey">Archivos Adjuntos</p><a href="#" download="download">
+                                  <p class="inf-txt">1 |  Boleta Nº 923812093102</p></a><a href="#" download="download">
+                                  <p class="inf-txt">2 | Lorem ipsum</p></a>
+                              </div>
+                            </div>
+                            <div class="col-4">
+                              <div class="box-label">
+                                <p class="label-grey">Fecha de atención</p>
+                                <p class="inf-txt">22/10/2017</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer center">
+                      <button class="btn-blue" type="button" data-dismiss="modal">Cerrar Ventana</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <ul class="progress-tracker progress-tracker--vertical">
+                <li class="progress-step is-complete"><span class="progress-marker"></span><span class="progress-text">
+                    <p class="step-date">12/03/2018</p>
+                    <h4 class="progress-title">Ingreso de solicitud</h4>
+                    <p class="step-content">Evaluaremos la información que nos enviaste y te notificaremos en pocos días.</p><a class="step-link" data-toggle="modal" data-target="#reembolsoModal"><img class="step-img" src="assets/icons/icon-solicitud.svg" alt=""/><span>Solicitud </span></a></span></li>
+                <li class="progress-step is-active"><span class="progress-marker"></span><span class="progress-text">
+                    <p class="step-date">17/03/2018</p>
+                    <h4 class="progress-title">Solicitud en revisión</h4>
+                    <p class="step-content">Estamos revisando la documentación que adjuntaste.</p></span></li>
+                <li><img class="flujo-img" src="assets/icons/icon-pagada-mobile.svg"/><span class="progress-marker"></span><span class="progress-text last-text">
+                    <p class="step-date">22/03/2018</p>
+                    <h4 class="progress-title item_check">Aprobada</h4>
+                    <p class="step-content">La solicitud Nº 02536841 que adjuntaste fue devuelta por faltar orden médica.</p><a class="step-link" href="#"><img class="step-img" src="assets/icons/icon-comprobantebono.svg" alt=""/><span>Comprobante bono </span></a></span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="navbar-bottom totem"><a href="#">
+        <div class="btn-gray"><img src="assets/icons/icon-volverizq.svg" alt=""/>
+          <p>Volver</p>
+        </div></a><a href="#">
+        <div class="btn-outline-blue">
+          <p>Cerrar Sesión</p>
+        </div></a></div>
+    <script src="js/libs/jquery-3.3.1.min.js"></script>
+    <script src="js/libs/bootstrap.min.js"></script>
+    <script src="js/libs/owl.carousel.js"></script>
+    <script src="js/libs/site.js"></script>
+    <script src="js/func-flujo_historico.js"></script>
+  </body>
+</html>

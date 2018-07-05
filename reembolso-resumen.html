@@ -1,0 +1,145 @@
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <link rel="icon" type="image/x-icon" href="./assets/icons/favicon/favicon-bupa.png"/>
+    <link rel="stylesheet" href="css/libs/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/styles.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet"/>
+    <title>Cruz Blanca</title>
+  </head>
+  <body>
+    <div class="main-container"> 
+      <section class="resumen-box">
+        <h1 class="section-title section-title_desk">Reembolso de atención médica</h1>
+        <h4 class="hide-md hide-lg">Confirmar solicitud</h4>
+        <div class="reembolso-resumen-main">
+          <h4>Comprobante de solicitud de reembolso </h4>
+          <div class="row">
+            <div class="col-md-6 left">
+              <div class="beneficiario resumen-celda"><span>Beneficiario</span>
+                <h5>Eduardo Rojas Calderón - Beneficiario</h5>
+              </div>
+              <div class="nombre-corto resumen-celda"><span>Nombre corto del reembolso</span>
+                <h5>Resfrío de Martín</h5>
+              </div>
+              <div class="archivos resumen-celda"><span>Archivos adjuntos</span>
+                <h5>1 |  Boleta Nº 923812093102</h5>
+              </div>
+            </div>
+            <div class="col-md-6 last-col left">
+              <div class="fecha resumen-celda"><span>Fecha de atención</span>
+                <h5>02/03/2017</h5>
+              </div>
+              <div class="monto-cell resumen-celda"><span>Monto solictado a reembolsar</span>
+                <h5 class="monto-unidad">$ 4.985</h5>
+              </div>
+              <div class="email resumen-celda"><span>Correo</span>
+                <h5>eduardorojas@gmail.com</h5>
+              </div>
+            </div>
+          </div>
+          <div class="change-request"><img src="./assets/icons/icon_pencil.svg"/><a href="reembolso-form.html">Modificar solicitud</a></div>
+        </div>
+        <div class="metodo-pago-main">
+          <h4>Pago del reembolso</h4>
+          <h5>Selecciona la forma de pago para tu reembolso</h5>
+          <div class="row">
+            <div class="col-md-6 left">
+              <label class="container"><span>Banco Estado</span><a data-toggle="modal" data-target="#modalSucursal"> </a>
+                <input type="radio" name="radio" data-toggle="modal" data-target="#modalSucursal"/><span class="checkmark"></span>
+              </label>
+              <p>Cuenta RUT Nº 00013467476</p>
+              <p>Titular: Eduardo Rojas Calderón Arancibia</p>
+            </div>
+            <div class="col-md-6 left">
+              <label class="container">Vale vista
+                <input type="radio" name="radio"/><span class="checkmark"></span>
+              </label>
+              <p>Para retirar en cualquier sucursal del banco BBVA</p>
+            </div>
+          </div>
+        </div>
+        <button class="btn-next" data-toggle="modal" data-target="#reembolsoModal" onclick="window.location.href='reembolso-exito.html'">Confirmar</button>
+      </section>
+    </div>
+    <div class="navbar-bottom totem"><a href="#">
+        <div class="btn-gray"><img src="assets/icons/icon-volverizq.svg" alt=""/>
+          <p>Volver</p>
+        </div></a><a href="#">
+        <div class="btn-outline-blue">
+          <p>Cerrar Sesión</p>
+        </div></a></div>
+  </body>
+  <div class="modales modal fade" id="modalSucursal" tabindex="-1" role="dialog" aria-labelledby="reembolsoModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="reembolsoModalLabel">Confirmar sucursal</h5>
+          <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+        </div>
+        <div class="modal-body">
+          <div class="disclaimer">
+            <div class="title-disclaimer"><img src="assets/icons/icon-alert.svg" alt=""/><span>Importante:</span></div>
+            <div class="content-disclaimer">
+              <p>Si por razones ajenas a la Isapre CruzBlanca S.A. tu depósito es rechazado por el banco o hubiese algún problema con la generación del Vale Vista, en 6 días hábiles estará a tu disposición un cheque en la sucursal que nos indiques.</p>
+            </div>
+          </div>
+          <div class="options">
+            <div class="select-box selectbox-flujo-medico">
+              <h4 class="form-title">Región</h4>
+              <p class="asterisc top">*</p>
+              <div class="select-box_area">
+                <select class="input-specialty">
+                  <option value=""> </option>
+                  <option value="Metropolitana">Metropolitana</option>
+                  <option value="Valparaiso">Valparaiso</option>
+                  <option value="BioBío">BioBío</option>
+                  <option value="Magallanes">Magallanes</option>
+                  <option value="Los Ríos">Los Ríos </option>
+                </select>
+              </div>
+            </div>
+            <div class="select-box selectbox-flujo-medico">
+              <h4 class="form-title">Comuna</h4>
+              <p class="asterisc">*</p>
+              <div class="select-box_area">
+                <select class="input-specialty">
+                  <option value=""> </option>
+                  <option value="Metropolitana">Metropolitana</option>
+                  <option value="Valparaiso">Valparaiso</option>
+                  <option value="BioBío">BioBío</option>
+                  <option value="Magallanes">Magallanes</option>
+                  <option value="Los Ríos">Los Ríos </option>
+                </select>
+              </div>
+            </div>
+            <div class="box-filtro_select select-box">
+              <h4 class="form-title">Sucursal</h4>
+              <p class="asterisc">*</p>
+              <div class="select-box_area selectPersonalizado">
+                <select class="selectStyle">
+                  <option value=""> </option>
+                  <option value="Option1">Option 1</option>
+                  <option value="Option2">Option 2</option>
+                  <option value="Option3">Option 3</option>
+                  <option value="Option4">Option 4</option>
+                  <option value="Option5">Option 5</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <p class="info-obligatory">* Información obligatoria</p>
+        </div>
+        <div class="actionBtn">
+          <button class="btn-next" data-toggle="modal" data-target="#reembolsoModal" onclick="window.location.href='reembolso-exito.html'">Aceptar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</html>
+<script src="js/libs/jquery-3.3.1.min.js"></script>
+<script src="js/libs/bootstrap.min.js"></script>
+<script src="js/funciones.js"> </script>
